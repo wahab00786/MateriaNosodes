@@ -138,7 +138,7 @@ main {
 
 /* Page containers */
 .page {
-    display: none; /* Hidden by default */
+    display: none !important; /* Force hide by default */
     padding: 1rem;
     background-color: #ffffff;
     border-radius: 0.75rem;
@@ -147,7 +147,7 @@ main {
 }
 
 .page.active {
-    display: block; /* Show active page */
+    display: block !important; /* Force show active page */
 }
 
 /* Search bar styling */
@@ -302,7 +302,7 @@ main {
 
 /* Apply flex display and centering when the tribute page is active */
 #tribute-page.active {
-    display: flex;
+    display: flex !important; /* Ensure flex layout when active */
     flex-direction: column;
     align-items: center;
     text-align: center;
