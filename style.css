@@ -138,7 +138,7 @@ main {
 
 /* Page containers */
 .page {
-    display: none !important; /* Force hide by default */
+    display: none; /* Hidden by default - removed !important */
     padding: 1rem;
     background-color: #ffffff;
     border-radius: 0.75rem;
@@ -147,7 +147,7 @@ main {
 }
 
 .page.active {
-    display: block !important; /* Force show active page */
+    display: block; /* Show active page - removed !important */
 }
 
 /* Search bar styling */
@@ -166,11 +166,7 @@ main {
     color: #9ca3af; /* Lighter gray placeholder text */
 }
 
-/* Search button styling */
-#search-button {
-    padding: 0.5rem 0.9rem; /* Slightly reduced padding for a more compact look */
-    font-size: 0.875rem; /* Ensure font size is consistent with other small buttons */
-}
+/* Search button styling - removed as button is removed from HTML */
 
 
 /* Medicine list item */
