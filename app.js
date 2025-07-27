@@ -8,7 +8,7 @@ const menuOverlay = document.getElementById('menu-overlay');
 const menuSidebar = document.getElementById('menu-sidebar');
 const menuLinks = document.querySelectorAll('.menu-link');
 const searchBar = document.getElementById('search-bar');
-const searchButton = document.getElementById('search-button'); // New: Get search button
+// Removed searchButton variable
 const medicineListDiv = document.getElementById('medicine-list');
 const detailMedicineName = document.getElementById('detail-medicine-name');
 const detailMedicineDescription = document.getElementById('detail-medicine-description');
@@ -30,7 +30,7 @@ const detailSymptoms = document.getElementById('detail-symptoms');
 const detailPotencyHeading = document.getElementById('detail-potency-heading');
 const detailPotency = document.getElementById('detail-potency');
 const detailClinicalCasesHeading = document.getElementById('detail-clinical-cases-heading');
-const detailClinicalCases = document.getElementById('detail-clinical-cases'); // FIXED: Corrected typo from '_cases' to '-cases'
+const detailClinicalCases = document.getElementById('detail-clinical-cases');
 
 // Privacy Policy specific element
 const privacyPolicyContentDiv = document.getElementById('privacy-policy-content');
@@ -76,7 +76,7 @@ const privacyPolicy = {
         <h4 class="font-semibold text-lg mb-2 text-right-urdu">4. اس پرائیویسی پالیسی میں تبدیلیاں:</h4>
         <p class="mb-4 text-right-urdu">ہم وقتاً فوقتاً اپنی پرائیویسی پالیسی کو اپ ڈیٹ کر سکتے ہیں۔ ہم ایپ کے اندر نئی پرائیویسی پالیسی پوسٹ کرکے آپ کو کسی بھی تبدیلی سے مطلع کریں گے۔ آپ کو مشورہ دیا جاتا ہے کہ کسی بھی تبدیلی کے لیے اس پرائیویسی پالیسی کا وقتاً فوقتاً جائزہ لیتے رہیں۔</p>
 
-        <h4 class="font-semibold text-lg mb-2 text-right-urdu">5. ہم سے رابطہ کریں:</h4>
+        <h4 class="font-semibold text-lg mb-2 text-right-urdu">5. Contact Us:</h4>
         <p class="mb-4 text-right-urdu">اگر آپ کو اس پرائیویسی پالیسی کے بارے میں کوئی سوالات ہیں، تو براہ کرم ایپ کے اندر "ہم سے رابطہ کریں" سیکشن کے ذریعے ہم سے رابطہ کریں۔</p>
     `
 };
@@ -281,7 +281,7 @@ menuLinks.forEach(link => {
 });
 
 searchBar.addEventListener('keyup', handleSearch);
-searchButton.addEventListener('click', handleSearch); // Event listener for the search button
+// Removed searchButton.addEventListener('click', handleSearch);
 backButton.addEventListener('click', () => showPage('home-page'));
 exitAppButton.addEventListener('click', showExitModal);
 closeExitModalButton.addEventListener('click', closeExitModal);
