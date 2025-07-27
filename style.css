@@ -294,26 +294,4 @@ main {
     font-family: 'Jameel Noori Nastaleeq', 'Inter', sans-serif; /* Apply custom font */
 }
 
-/* Styling for the tribute section and image */
-/* Removed 'display: flex', 'flex-direction', 'align-items', 'text-align' from .tribute-section */
-.tribute-section {
-    /* These properties are now applied only when #tribute-page is active */
-}
-
-/* Apply flex display and centering when the tribute page is active */
-#tribute-page.active {
-    display: flex !important; /* Ensure flex layout when active */
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.tribute-image {
-    max-width: 100%; /* Ensure image is responsive */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove extra space below image */
-    margin: 1.5rem auto; /* Center image with some vertical spacing */
-    border-radius: 0.75rem; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    object-fit: contain; /* Ensure the entire image is visible without cropping */
-}
+/* Removed all tribute-specific styling as the page is deleted */
